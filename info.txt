@@ -1,0 +1,25 @@
+breakdown of options:
+
+- Regional Insight
+    - whole overview
+        - Gender
+        - Income Range
+        - Geographic Composition'
+        - Device Usage
+
+- Target Audience
+    - selected overview
+
+- Audience Interests
+
+- Budget
+
+
+
+VIS types
+
+- Part to whole 
+    - Doughnut chart w/ legend
+    - grid plot
+    
+    - bar graph 

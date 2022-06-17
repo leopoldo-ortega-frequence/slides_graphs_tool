@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link rel="stylesheet" href="/css/app.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slides Data Helper</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper blue-grey">
+        <a href="#!" class="brand-logo">Slides Graphs Demo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="demographic.html">Demographic</a></li>
+          <li><a href="interest.html">Interests</a></li>
+          <li class="active"><a href="audience.html">Audience</a></li>
+          <li><a href="budget.html">Budget</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="demographic.html">Demographic</a></li>
+      <li><a href="interest.html">Interests</a></li>
+      <li class="active"><a href="audience.html">Audience</a></li>
+      <li><a href="budget.html">Budget</a></li>
+    </ul>
+
+    <main class="audience page">
+      <div class="target-tool">
+        <h3>Audience</h3>
+        <form class="content">
+          <div id="gender-select">
+            <h5>Gender</h5>
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="male"
+                value="male"
+              /><span>Male</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="female"
+                value="female"
+              /><span>Female</span></label
+            ><br />
+          </div>
+          <div id="age-select">
+            <h5>Age</h5>
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="under50"
+                value="under 18"
+              /><span>Under 18</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="18-24"
+                value="18-24"
+              /><span>18-24</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="25-34"
+                value="25-34"
+              /><span>25-34</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="35-44"
+                value="35-44"
+              /><span>35-44</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="45-54"
+                value="45-54"
+              /><span>45-54</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="55-64"
+                value="55-64"
+              /><span>55-64</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="65+"
+                value="65+"
+              /><span>65+</span></label
+            ><br />
+          </div>
+          <div id="income-select">
+            <h5>Income</h5>
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="under50"
+                value="0-50k"
+              /><span>Under 50k</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="50k-100k"
+                value="50k-100k"
+              /><span>50k-100k</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="100k-150k"
+                value="100k-150k"
+              /><span>100k-150k</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="150k+"
+                value="150k+"
+              /><span>150k+</span></label
+            ><br />
+          </div>
+          <div id="education-select">
+            <h5>Education</h5>
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="NoCollege"
+                value="No College"
+              /><span>No College</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="College"
+                value="College"
+              /><span>College</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="GradSchool"
+                value="Grad School"
+              /><span>Grad School</span></label
+            ><br />
+          </div>
+          <div id="parenting-select">
+            <h5>Parenting</h5>
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="NoKids"
+                value="No Kids"
+              /><span>No Kids</span></label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="audience-target"
+                id="HasKids"
+                value="Has Kids"
+              /><span>Has Kids</span></label
+            ><br />
+          </div>
+          <div class="svg-audience-prev"></div>
+        </form>
+      </div>
+      <div class="audience-chart-container"></div>
+    </main>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
