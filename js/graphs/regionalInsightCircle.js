@@ -10,9 +10,7 @@ export const regionalInsightCircle = (props) => {
     circlesPerLine,
     color,
   } = props;
-  console.log(data);
-
-  console.log(height);
+ 
   const regionalG = container
     .append("g")
     .attr("class", `regional-insight-group-${idx}`)

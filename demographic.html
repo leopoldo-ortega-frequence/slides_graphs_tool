@@ -29,7 +29,7 @@
         >
         <ul class="right hide-on-med-and-down">
           <li class="active"><a href="index.html">Demographic</a></li>
-          <li><a href="targeting.html">Targeting</a></li>
+          <li><a href="interest.html">Interests</a></li>
           <li><a href="audience.html">Audience</a></li>
           <li><a href="budget.html">Budget</a></li>
         </ul>
@@ -38,10 +38,65 @@
 
     <ul class="sidenav" id="mobile-demo">
       <li class="active"><a href="index.html">Demographic</a></li>
-      <li><a href="targeting.html">Targeting</a></li>
+      <li><a href="interest.html">Interests</a></li>
       <li><a href="audience.html">Audience</a></li>
       <li><a href="budget.html">Budget</a></li>
     </ul>
+    <main class="demographics page">
+      <div class="data-selectors">
+        <div>
+          <a class="waves-effect waves-light btn" id="trueRandom"
+            >True Random</a
+          >
+          <a class="waves-effect waves-light btn" id="biasRandom"
+            >Bias Random</a
+          >
+        </div>
+        <div>
+          <span id="data-info"></span>
+          <span style="display: block; font-size: 12px; font-style: italic"
+            >*This is the data that is normally generated upon selecting the
+            target region(s)</span
+          >
+        </div>
+      </div>
+      <div class="demographics-select-container">
+        <h5>Demographics Visualization</h5>
+        <div class="select-top">
+          <div id="data-dropdown" class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="genderData">Gender</option>
+              <option value="incomeData">Income</option>
+              <option value="compData">Demographics</option>
+              <option value="ageData">Age</option>
+              <option value="educationData">Education</option>
+              <option value="parentData">Parenting</option>
+              <option value="deviceData">Devices</option>
+            </select>
+            <label>Choose Data</label>
+          </div>
+          <div class="data-display">
+            <h5>Data Breakdown</h5>
+            <ul id="data-list"></ul>
+          </div>
+        </div>
+        <div class="select-chart">
+          <div id="chart-dropdown" class="input-field col s12">
+            <select>
+              <option selected value="doughnut">Doughnut</option>
+              <option value="circle">Circular</option>
+              <option value="bar">Bar Chart</option>
+              <option value="treegraph">Tree Graph</option>
+              <option value="grid">Grid Plot</option>
+            </select>
+            <label>Choose Visualization</label>
+          </div>
+        </div>
+        <!-- demographics charts will go here -->
+        <div class="demographics-svg-container"></div>
+      </div>
+    </main>
 
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

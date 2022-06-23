@@ -1,8 +1,24 @@
+/* default */
+h3 {
+  margin: 0;
+}
+nav .nav-wrapper {
+  padding: 0 2rem;
+}
 /* target tool styling */
-
-.audience.page .target-tool {
+.data-selectors {
   max-width: 1200px;
   margin: 2rem auto 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+/* Audience Page */
+.audience.page .target-tool {
+  max-width: 1200px;
+  margin: 1rem auto 0;
   padding: 0px 2rem 2rem 2rem;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
     0 1px 5px 0 rgb(0 0 0 / 20%);
@@ -19,4 +35,53 @@
   height: 900px;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
     0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+/* Demographics Page */
+.demographics.page .demographics-select-container {
+  max-width: 1200px;
+  position: relative;
+  width: 100%;
+  margin: 2rem auto 0;
+  padding: 4rem;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+.demographics.page .demographics-select-container #data-dropdown,
+.demographics.page .demographics-select-container #chart-dropdown {
+  width: 300px;
+}
+.demographics.page .demographics-select-container .select-top {
+  display: flex;
+  justify-content: space-between;
+}
+.demographics.page .demographics-select-container .select-top .data-display {
+  width: 300px;
+  background-color: #eceff1;
+  padding: 0 1rem;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.demographics.page
+  .demographics-select-container
+  .select-top
+  .data-display
+  #data-list
+  li {
+  display: flex;
+  justify-content: space-between;
+}
+.demographics.page
+  .demographics-select-container
+  .select-top
+  .data-display
+  #data-list
+  li
+  div:first-child {
+  font-weight: bold;
+}
+
+.demographics.page .demographic-container-g .geo-graph-container .tick text {
+  display: none;
 }
